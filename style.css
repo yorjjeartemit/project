@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text);
+    text-align: left;
+    background-color: var();
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 86px;
+    background: #fdffcb;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header_section{
+    display:flex;
+    align-items: center;
+}
+
+.header_item{
+    padding: 10px 15px;
+    font-size: 20px;
+
+    margin-left: 5px;
+}
+.header_item:hover{
+    border-radius: 6px;
+    color: purple;
+    background-color: bisque;
+}
+.header_section2{
+    display: flex;
+    align-items: center;
+}
+.headerlogo{
+    font-weight: bold;
+
+}
+.headerbut{
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-33.33%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-66.66%);
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation label {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background: #333;
+}
+element.style {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+svg:root {
+    width: 100%;
+    height: 100%;
+}
+/* Для веб-кит браузерів (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px; /* Ширина полоси прокрутки */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Колір фону треку полоси прокрутки */
+    border-radius: 10px; /* Закруглені кути треку */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Колір полоси прокрутки */
+    border-radius: 10px; /* Закруглені кути полоси прокрутки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Колір полоси прокрутки при наведенні */
+}
+
+/* Для браузера Firefox */
+* {
+    scrollbar-width: thin; /* Тонка полоса прокрутки */
+    scrollbar-color: #888 #f1f1f1; /* Колір полоси прокрутки та треку */
+}
+
+/* Опціонально: стилізація для Internet Explorer 10+ */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Автоховаючася полоса прокрутки */
+}
